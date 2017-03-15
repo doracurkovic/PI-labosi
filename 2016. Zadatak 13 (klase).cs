@@ -14,7 +14,7 @@ namespace Vjezba_pdf_klasa_13
 {
     class Zadatak
     {
-        string linija = Console.ReadLine();
+        string linija;
         int N;
         int[] polje;
         public void Unos()
