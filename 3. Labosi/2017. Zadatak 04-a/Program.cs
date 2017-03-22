@@ -48,7 +48,7 @@ namespace _2017.Zadatak_04
                             Console.Write("Unesite naziv filma: ");
                             naziv = Console.ReadLine();
 
-                            try //iznimku baca ali kasnije kod ispisa ispisuje i one unose koje nebi smjelo
+                            try
                             {
                                 Console.Write("Unesite ocjenu filma: ");
                                 ocjena = int.Parse(Console.ReadLine());
