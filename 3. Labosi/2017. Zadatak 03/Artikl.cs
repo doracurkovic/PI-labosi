@@ -12,8 +12,6 @@ namespace _2017.Zadatak_03
         public double jedCijenaArtikla { get; set; }
         public int kolicinaArtikla { get; set; }
 
-        double sumaCijenaArtikla;
-
         public Artikl()
         {
 
