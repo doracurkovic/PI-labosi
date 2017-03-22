@@ -40,7 +40,7 @@ namespace _2016.Zadatak_23
                     Console.Write("Unesite " + (i + 1) + ". binarni broj: ");
                     binarniBr[i] = Console.ReadLine();
 
-                    if (binarniBr[i].Length != 8 || !binarniBr[i].Contains("0") || !binarniBr[i].Contains("1"))
+                    if (binarniBr[i].Length != 8 && !binarniBr[i].Contains("0") && !binarniBr[i].Contains("1"))
                     {
                         throw new BrojBitova("Broj bitova u broju ili format nije ispravan! ");
                     }
