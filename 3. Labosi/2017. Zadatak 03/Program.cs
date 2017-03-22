@@ -1,4 +1,4 @@
-﻿/* 1. Unit artikl u listu artikala. Svaki artikl ima naziv, jedinicnu cijenu i kolicinu 
+/* 1. Unit artikl u listu artikala. Svaki artikl ima naziv, jedinicnu cijenu i kolicinu 
 2. Ispisati sve artikle. 
 3. Ispisati artikle kojima je jedinicna cijena veca od x (korisnik unosi broj x) 
 4. Ispisatu artikle kojima je sveukupna cijena manja od y (korisnik unosi broj y). 
@@ -57,20 +57,23 @@ namespace _2017.Zadatak_03
                                 {
                                     throw new NeDopuštenaVrijednostIznimka("Cijena mora biti veća od 0!");
                                 }
+                                else
+                                {
+                                    Console.Write("Unesite kolicinu artikla: ");
+                                    kolicina = int.Parse(Console.ReadLine());
+
+                                    tmpArtikl.nazivArtikla = naziv;
+                                    tmpArtikl.jedCijenaArtikla = cijena;
+                                    tmpArtikl.kolicinaArtikla = kolicina;
+
+                                    artikli.Add(tmpArtikl);
+                                }
                             }
                             catch (NeDopuštenaVrijednostIznimka ex)
                             {
                                 Console.WriteLine(ex.DodatnaPoruka);
                             }
                                                
-                            Console.Write("Unesite kolicinu artikla: ");
-                            kolicina = int.Parse(Console.ReadLine());
-
-                            tmpArtikl.nazivArtikla = naziv;
-                            tmpArtikl.jedCijenaArtikla = cijena;
-                            tmpArtikl.kolicinaArtikla = kolicina;
-
-                            artikli.Add(tmpArtikl);
                             break;
                         }
 
