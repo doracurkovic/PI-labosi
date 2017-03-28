@@ -42,8 +42,7 @@ namespace _2016.Zadatak_34
         public int Računanje()
         {
             string pretvorba = "";
-            int rezultatRacunaj = 0;
-            
+            int rezultatRacunaj = 0;       
             foreach(int binBroj in BinarniBrojevi)
             {
                 pretvorba += Convert.ToString(binBroj);
