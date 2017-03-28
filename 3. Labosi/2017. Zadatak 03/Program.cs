@@ -2,8 +2,7 @@
 2. Ispisati sve artikle. 
 3. Ispisati artikle kojima je jedinicna cijena veca od x (korisnik unosi broj x) 
 4. Ispisatu artikle kojima je sveukupna cijena manja od y (korisnik unosi broj y). 
-    sveukupna cijena = misli se na jedinicna cijena * kolicina.  
-*/
+    sveukupna cijena = misli se na jedinicna cijena * kolicina. */
 
 using System;
 using System.Collections.Generic;
@@ -65,15 +64,13 @@ namespace _2017.Zadatak_03
                                     tmpArtikl.nazivArtikla = naziv;
                                     tmpArtikl.jedCijenaArtikla = cijena;
                                     tmpArtikl.kolicinaArtikla = kolicina;
-
                                     artikli.Add(tmpArtikl);
                                 }
                             }
                             catch (NeDopuštenaVrijednostIznimka ex)
                             {
                                 Console.WriteLine(ex.DodatnaPoruka);
-                            }
-                                               
+                            }              
                             break;
                         }
 
@@ -98,7 +95,6 @@ namespace _2017.Zadatak_03
                                 {
                                     jedanArtikl.Ispis();
                                 }
-
                             }
                             break;
                         }
@@ -108,14 +104,12 @@ namespace _2017.Zadatak_03
                             Console.Write("Unesi broj y: ");
                             y = int.Parse(Console.ReadLine());
 
-
                             foreach (Artikl jedanArtikl in artikli)
                             {
                                 if (jedanArtikl.ManjeOdY(y))
                                 {
                                     jedanArtikl.Ispis();
                                 }
-
                             }
                             break;
                         }
